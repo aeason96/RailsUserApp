@@ -1,5 +1,6 @@
 class User < ApplicationRecord
     validates :name, presence: true, uniqueness: true
+    has_many :microposts, dependent: :destroy
     has_secure_password
     attr_accessor :remember_token
     def digest(string)
