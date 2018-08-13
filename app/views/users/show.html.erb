@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<title><%=@user.name%></title>
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
@@ -11,7 +11,6 @@
     <ol class="microposts">
       <%= render @microposts %>
     </ol>
-    <%= will_paginate @microposts %>
   <% end %>
 </div>
 
