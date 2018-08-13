@@ -1,0 +1,6 @@
+<% if @microposts.any? %>
+    <h3>Microposts (<%= @microposts.count %>)</h3>
+    <ul class="microposts" style='list-style-type: none;'>
+        <%= render @microposts %>
+    </ul>
+<% end %>

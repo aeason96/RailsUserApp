@@ -15,11 +15,11 @@ module SessionsHelper
             end
         end
     end
-
-    def logged_in
-        session[:user_id]
-    end
-
+    
+    def logged_in 
+        session[:user_id] 
+    end 
+ 
     def forget(user)
         user.forget
         cookies.delete(:user_id)
